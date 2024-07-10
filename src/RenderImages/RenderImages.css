@@ -1,0 +1,27 @@
+#card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cards {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  animation-name: rotateCards;
+  animation-duration: 1s;
+  transition-duration: 0.5s;
+}
+
+.cards:hover {
+  cursor: pointer;
+  border: 5px solid darkred;
+}
+
+@keyframes rotateCards {
+  from {
+    visibility: hidden;
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
